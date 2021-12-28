@@ -7,18 +7,12 @@ The data can be collected using the video-cam, or from an image already availabl
 
 ## Working
 **Working Steps**
-- Face Detection
 
-**OpenCV** library along with **haarcascade** file used for detecting frontal face is used to detect faces in the image/video. The portion of image containing the image is cropped, resized and converted to gray-scale(1D).
+- **OpenCV** library along with **haarcascade** file used for detecting frontal face is used to detect faces in the image/video. The portion of image containing the image is cropped, resized and converted to gray-scale(1D).
 
+- The array output of the gray-scale image along with the name (which is our label/dependent variable) that the user inputs when the code is executed is our training data. This data is stored as a **.npy** file.
 
-- Data Collection
-
-The array output of the gray-scale image along with the name (which is our label/dependent variable) that the user inputs when the code is executed is our training data. This data is stored as a **.npy** file.
-
-- Training
-
-The model is trained using the SVM classifier. 
+- The model is trained using the SVM classifier. 
 
 ## How To Use 
 1. Clone the project
